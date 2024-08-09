@@ -2394,6 +2394,7 @@
   display: flex;
   box-sizing: border-box;
   max-width: 100%;
+  
 }
 .button-search-wrapper {
   width: 23.438rem;
@@ -2482,8 +2483,9 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .explore-cities {
-  flex: 0.3732;
+  /* flex: 0.3732;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
@@ -2495,8 +2497,31 @@
   background-repeat: no-repeat;
   background-position: top;
   min-width: 39rem;
-  z-index: 4;
+  z-index: 4; */
+  /**/
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-105xl) var(--padding-2xl) var(--padding-84xl-6)
+    var(--padding-xl);
+  position: relative;
+  gap: var(--gap-4xl);
+  background-image: url(./public/rectangle-19302@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 39rem;
 }
+/* .explore-cities-child {
+  width: 60rem;
+  height: 24.938rem;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+} */
 .explore-nature-parent {
   align-self: stretch;
   flex-direction: row;
