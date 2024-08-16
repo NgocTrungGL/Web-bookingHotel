@@ -1351,7 +1351,7 @@
   display: inline-block;
   min-width: 8.063rem;
 }
-.button-search6,
+
 .container4 {
   display: flex;
   align-items: flex-start;
@@ -2823,6 +2823,7 @@
   white-space: nowrap;
 }
 .button-search10:hover,
+.subscribe-button-container:hover
 .subscribe-button-container:hover {
   background-color: var(--color-firebrick);
 }
@@ -3583,19 +3584,42 @@
   max-width: 100%;
 }
 .your-email-address3 {
-  position: relative;
+  /* position: relative;
   letter-spacing: -0.02em;
   line-height: 1.625rem;
   font-weight: 500;
-  z-index: 1;
+  z-index: 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.input-container1 {
+.your-email-address3 input[type="email"] {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+  font-size: 1em;
+  height: 50px; /* Ensure the height matches the button */
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* .input-container1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-sm) 0 0;
+} */
+
+.input-container1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
+
 .subscribe-button-container-child {
   height: 3.25rem;
   width: 9.313rem;
@@ -3605,20 +3629,8 @@
   background-color: var(--color-salmon);
   display: none;
 }
-.subscribe3 {
-  position: relative;
-  font-size: var(--font-size-base);
-  letter-spacing: -0.02em;
-  line-height: 1.625rem;
-  font-weight: 500;
-  font-family: var(--font-manrope);
-  color: var(--white);
-  text-align: left;
-  display: inline-block;
-  min-width: 4.625rem;
-  z-index: 2;
-}
-.subscribe-button-container {
+
+/* .subscribe-button-container {
   cursor: pointer;
   border: 0;
   padding: var(--padding-smi) var(--padding-13xl);
@@ -3632,7 +3644,28 @@
   justify-content: flex-end;
   box-sizing: border-box;
   z-index: 1;
+} */
+
+.subscribe-button-container {
+  background-color: #F05C4D;
+  border: 1px solid #F05C4D;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
+
+.subscribe-button-container:hover {
+  background-color: #87200c;
+}
+
 .rectangle-parent28,
 .subscription-form1 {
   display: flex;
@@ -3641,14 +3674,12 @@
   max-width: 100%;
 }
 .rectangle-parent28 {
-  flex: 1;
-  background-color: var(--color-lavender);
-  justify-content: space-between;
-  padding: 0 0 0 var(--padding-mini);
-  box-sizing: border-box;
-  gap: var(--gap-xl);
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 .subscription-form1 {
   align-self: stretch;
   justify-content: flex-start;
