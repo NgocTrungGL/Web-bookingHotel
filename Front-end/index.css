@@ -1351,7 +1351,7 @@
     display: inline-block;
     min-width: 8.063rem;
 }
-.button-search6,
+
 .container4 {
     display: flex;
     align-items: flex-start;
@@ -2358,7 +2358,7 @@
     color: var(--white);
     font-family: var(--font-volkhov);
 }
-.button-search8,
+/* .button-search8, */
 .frame-parent9,
 .line-3-parent {
     display: flex;
@@ -2822,7 +2822,7 @@
     white-space: nowrap;
 }
 .button-search10:hover,
-.subscribe-button-container:hover {
+.subscribe-button-container:hover .subscribe-button-container:hover {
     background-color: var(--color-firebrick);
 }
 .button-search10,
@@ -3648,6 +3648,7 @@
     gap: var(--gap-xl);
     z-index: 1;
 }
+
 .subscription-form1 {
     align-self: stretch;
     justify-content: flex-start;
