@@ -2358,7 +2358,7 @@
   color: var(--white);
   font-family: var(--font-volkhov);
 }
-.button-search8,
+/* .button-search8, */
 .frame-parent9,
 .line-3-parent {
   display: flex;
@@ -2453,8 +2453,7 @@
 .frame-parent10 {
   flex-direction: column;
 }
-.button-search-container,
-.button-search9 {
+.button-search-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
